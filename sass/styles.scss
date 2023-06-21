@@ -1,31 +1,5 @@
 @import url('typography.css');
 
-// BOOTSTRAP
-
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../bootstrap/scss/functions";
-
-// 2. Include any default variable overrides here
-
-// 3. Include remainder of required Bootstrap stylesheets
-@import "../bootstrap/scss/variables";
-@import "../bootstrap/scss/mixins";
-@import "../bootstrap/scss/root";
-
-// 4. Include any optional Bootstrap CSS as needed
-@import "../bootstrap/scss/utilities";
-@import "../bootstrap/scss/reboot";
-@import "../bootstrap/scss/type";
-@import "../bootstrap/scss/images";
-@import "../bootstrap/scss/containers";
-@import "../bootstrap/scss/grid";
-// @import "../bootstrap/scss/helpers";
-
-// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-// @import "../bootstrap/scss/utilities/api";
-
-// 6. Add additional custom code here
-
 // COLORS
 // Primary
 $red: hsl(0, 100%, 74%);
@@ -37,3 +11,19 @@ $blue: hsl(248, 32%, 49%);
 // Neutral
 $darkBlue: hsl(249, 10%, 26%);
 $grayishBlue: hsl(246, 25%, 77%);
+
+// BOOTSTRAP
+
+// Include any default variable overrides here (though functions won't be available)
+@import "../bootstrap/scss/bootstrap";
+
+// Required
+@import "../bootstrap/scss/functions";
+
+// Required
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+html, body {
+    background: $red url('../images/bg-intro-mobile.png');
+}

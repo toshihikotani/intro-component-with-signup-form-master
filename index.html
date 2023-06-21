@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row m-3">
+         <!--FIRST FLEX CONTENT-->
+        <div class="mx-4 my-5">
+          <h2 class="text-light text-center">Learn to code by watching others</h2>
+
+          <p class="text-light text-center">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think is
+            invaluable.
+          </p>
+        </div>
+        <!--SECOND FLEX CONTENT-->
+        <div class="d-flex flex-column align-items-center">
+
+          <div class="w-75 mb-3 bg-primary rounded">
+            <p class="px-4 py-2 text-light text-center">Try it free 7 days then $20/mo. thereafter</p>
+          </div>
   
-  <title>Frontend Mentor | Intro component with sign up form</title>
-</head>
-<body>
+          <div class="p-4 bg-light rounded">
 
-  Learn to code by watching others
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="First Name" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email Address" />
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password" />
+            </div>
+    
+            <div class="d-grid">
+              <button type="button" class="btn btn-success">
+                <span class="text-light">Claim your free trial</span>
+              </button>
+            </div>
+    
+            <p>By clicking the button, you are agreeing to our Terms and Services</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
