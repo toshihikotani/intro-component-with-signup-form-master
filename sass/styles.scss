@@ -24,6 +24,10 @@ $grayishBlue: hsl(246, 25%, 77%);
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 
-html, body {
+html {
+    min-height: 100vh;
+}
+
+body {
     background: $red url('../images/bg-intro-mobile.png');
 }

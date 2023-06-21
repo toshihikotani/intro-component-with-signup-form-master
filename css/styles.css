@@ -10103,7 +10103,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html, body {
+html {
+  min-height: 100vh;
+}
+
+body {
   background: hsl(0deg, 100%, 74%) url("../images/bg-intro-mobile.png");
 }
 
