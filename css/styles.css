@@ -10103,12 +10103,64 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  min-height: 100vh;
+html,
+body {
+  min-width: 100vw;
 }
 
 body {
+  min-height: 100vh;
   background: hsl(0deg, 100%, 74%) url("../images/bg-intro-mobile.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .component-details-section .component-details-header {
+  font-family: "Poppins-Bold";
+}
+.container .component-details-section .component-details-paragraph {
+  font-family: "Poppins-Regular";
+  line-height: 1.65rem;
+}
+.container .component-form-section .component-form-paragraph-box {
+  border-radius: 0.4rem;
+  box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.container .component-form-section .component-form-paragraph-box .component-form-paragraph {
+  font-family: "Poppins-Regular";
+  font-size: 0.95rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  line-height: 1.5rem;
+}
+.container .component-form-section .component-form-paragraph-box .component-form-paragraph .component-form-paragraph-highlight {
+  font-family: "Poppins-SemiBold";
+}
+.container .component-form-section .component-form-register {
+  border-radius: 0.4rem;
+  box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.container .component-form-section .component-form-register input {
+  font-family: "Poppins-SemiBold";
+  font-size: 0.9rem;
+}
+.container .component-form-section .component-form-register button {
+  text-transform: uppercase;
+  font-family: "Poppins-Medium";
+  box-shadow: 0px 4px 1px hsl(155deg, 73%, 67%);
+}
+.container .component-form-section .component-form-register button:hover {
+  cursor: pointer;
+}
+.container .component-form-section .component-form-register .term-and-conditions-paragraph {
+  color: hsl(246deg, 25%, 77%);
+  font-family: "Poppins-Regular";
+  font-size: 0.65rem;
+  line-height: 1.25rem;
+}
+.container .component-form-section .component-form-register .term-and-conditions-paragraph .term-and-conditions-paragraph-highlight {
+  font-family: "Poppins-Bold";
 }
 
 /*# sourceMappingURL=styles.css.map */

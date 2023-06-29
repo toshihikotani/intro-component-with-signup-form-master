@@ -1,4 +1,4 @@
-@import url('typography.css');
+@import url("typography.css");
 
 // COLORS
 // Primary
@@ -24,10 +24,86 @@ $grayishBlue: hsl(246, 25%, 77%);
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 
-html {
-    min-height: 100vh;
+html,
+body {
+  min-width: 100vw;
 }
 
 body {
-    background: $red url('../images/bg-intro-mobile.png');
+  min-height: 100vh;
+  background: $red url("../images/bg-intro-mobile.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MAIN
+.container {
+  // COMPONENT DETAILS SECTION
+  .component-details-section {
+    // HEADER
+    .component-details-header {
+      font-family: "Poppins-Bold";
+    }
+
+    // PARAGRAPH
+    .component-details-paragraph {
+      font-family: "Poppins-Regular";
+      line-height: 1.65rem;
+    }
+  }
+
+  // COMPONENT FORM SECTION
+  .component-form-section {
+    // PARAGRAPH
+    .component-form-paragraph-box {
+      border-radius: 0.4rem;
+      box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
+
+      .component-form-paragraph {
+        .component-form-paragraph-highlight {
+          font-family: "Poppins-SemiBold";
+        }
+
+        font-family: "Poppins-Regular";
+        font-size: 0.95rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    // REGISTER FORM
+    .component-form-register {
+      border-radius: 0.4rem;
+      box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
+
+      // INPUT FIELD
+      input {
+        font-family: "Poppins-SemiBold";
+        font-size: 0.9rem;
+      }
+
+      button {
+        text-transform: uppercase;
+        font-family: "Poppins-Medium";
+        box-shadow: 0px 4px 1px hsl(155, 73, 67);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .term-and-conditions-paragraph {
+        color: $grayishBlue;
+        font-family: "Poppins-Regular";
+        font-size: 0.65rem;
+        line-height: 1.25rem;
+
+        .term-and-conditions-paragraph-highlight {
+          font-family: "Poppins-Bold";
+        }
+      }
+    }
+  }
 }
