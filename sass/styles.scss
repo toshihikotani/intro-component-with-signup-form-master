@@ -44,11 +44,13 @@ body {
     // HEADER
     .component-details-header {
       font-family: "Poppins-Bold";
+      text-align: center;
     }
 
     // PARAGRAPH
     .component-details-paragraph {
       font-family: "Poppins-Regular";
+      text-align: center;
       line-height: 1.65rem;
     }
   }
@@ -57,6 +59,7 @@ body {
   .component-form-section {
     // PARAGRAPH
     .component-form-paragraph-box {
+      width: 100%;
       border-radius: 0.4rem;
       box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
 
@@ -102,6 +105,59 @@ body {
 
         .term-and-conditions-paragraph-highlight {
           font-family: "Poppins-Bold";
+        }
+      }
+    }
+  }
+}
+
+// LARGE DESKTOP
+@media only screen and (min-width: 1200px) {
+  body {
+    background: $red url("../images/bg-intro-desktop.png");
+  }
+
+  // MAIN
+  .container {
+    // COMPONENT DETAILS SECTION
+    .component-details-section {
+      // HEADER
+      .component-details-header {
+        font-size: 3rem;
+        text-align: start;
+        margin-top: 7.5rem;
+      }
+
+      // PARAGRAPH
+      .component-details-paragraph {
+        font-size: 1rem;
+        text-align: start;
+        line-height: 1.75rem;
+      }
+    }
+
+    // COMPONENT FORM SECTION
+    .component-form-section {
+      // PARAGRAPH
+      .component-form-paragraph-box {
+        width: 93%;
+      }
+
+      // REGISTER FORM
+      .component-form-register {
+        width: 93%;
+
+        // INPUT FIELD
+        input {
+          width: 91%;
+        }
+
+        button {
+          width: 91%;
+        }
+
+        .term-and-conditions-paragraph {
+          font-size: 0.7rem;
         }
       }
     }
