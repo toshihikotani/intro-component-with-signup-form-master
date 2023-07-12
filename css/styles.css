@@ -10144,9 +10144,30 @@ body {
   border-radius: 0.4rem;
   box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
+.container .component-form-section .component-form-register .position-absolute {
+  top: 18%;
+  left: 85%;
+}
+.container .component-form-section .component-form-register .position-absolute .badge {
+  display: block;
+  font-size: 0.95em;
+}
 .container .component-form-section .component-form-register input {
   font-family: "Poppins-SemiBold";
   font-size: 0.9rem;
+}
+.container .component-form-section .component-form-register input.error-box {
+  border-color: hsl(0deg, 100%, 74%);
+  border-width: 2px;
+}
+.container .component-form-section .component-form-register p.error-message {
+  display: none;
+  font-family: "Poppins-SemiBold";
+  font-style: italic;
+  font-size: 0.7rem;
+}
+.container .component-form-section .component-form-register .show-error {
+  display: block !important;
 }
 .container .component-form-section .component-form-register button {
   text-transform: uppercase;
