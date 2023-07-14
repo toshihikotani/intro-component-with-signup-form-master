@@ -10145,12 +10145,15 @@ body {
   box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
 .container .component-form-section .component-form-register .position-absolute {
+  display: none;
   top: 18%;
   left: 85%;
 }
 .container .component-form-section .component-form-register .position-absolute .badge {
-  display: block;
   font-size: 0.95em;
+}
+.container .component-form-section .component-form-register .show-badge-icon {
+  display: block !important;
 }
 .container .component-form-section .component-form-register input {
   font-family: "Poppins-SemiBold";
@@ -10170,6 +10173,7 @@ body {
   display: block !important;
 }
 .container .component-form-section .component-form-register button {
+  width: 100%;
   text-transform: uppercase;
   font-family: "Poppins-Medium";
   box-shadow: 0px 4px 1px hsl(155deg, 73%, 67%);

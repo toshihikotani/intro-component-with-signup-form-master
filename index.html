@@ -16,14 +16,14 @@
   </head>
   <body>
     <main class="container">
-      <div class="row mx-sm-1 mx-lg-5 my-5">
+      <div class="row mx-1 my-5 mx-lg-5">
         <!--FIRST FLEX CONTENT-->
         <section class="component-details-section col-sm-12 col-lg-6 my-5">
-          <h2 class="component-details-header text-light mx-sm-2 mx-lg-5 mb-sm-4">
+          <h2 class="component-details-header text-light mx-2 mb-4 mx-lg-5 ">
             Learn to code by watching others
           </h2>
 
-          <p class="component-details-paragraph text-light  mx-lg-3 px-lg-4">
+          <p class="component-details-paragraph text-light mx-lg-3 px-lg-4">
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great, but understanding how developers think
             is invaluable.
@@ -43,38 +43,37 @@
           </div>
 
           <!--COMPONENT FORM REGISTER-->
-          <form id="component-form"  class="component-form-register mx-auto 
-                      px-sm-4 px-lg-3 py-sm-3 py-lg-4 bg-white">
-            <div id="first-name" class="mt-sm-3 mb-3 position-relative">
-              <div class="position-absolute">
+          <form id="component-form"  class="component-form-register mx-auto px-4 py-3 px-lg-3 bg-white">
+            <div class="mt-3 mb-3 position-relative">
+              <div id="first-name-error-icon" class="position-absolute">
                 <span class="badge rounded-circle bg-danger">!</span>
               </div>
-              <input id="first-name-input" type="text" class="form-control px-sm-3 px-lg-4 py-sm-3 mx-auto" placeholder="First Name"/>
+              <input id="first-name-input" type="text" class="form-control px-3 py-3 px-lg-4 mx-auto" placeholder="First Name"/>
               <p id="first-name-message" class="error-message text-end text-danger mx-lg-4 mt-2">First Name cannot be empty</p>
             </div>
-            <div id="last-name" class="mb-3 mb-lg-4 position-relative">
-              <div class="position-absolute">
+            <div class="mb-3 mb-lg-4 position-relative">
+              <div id="last-name-error-icon" class="position-absolute">
                 <span class="badge rounded-circle bg-danger">!</span>
               </div>
-              <input id="last-name-input" type="text" class="form-control px-sm-3 px-lg-4 py-sm-3 mx-auto error-box" placeholder="Last Name"/>
+              <input id="last-name-input" type="text" class="form-control px-3 py-3 px-lg-4 mx-auto" placeholder="Last Name"/>
               <p id="last-name-message" class="error-message text-end text-danger mx-lg-4 mt-2">Last Name cannot be empty</p>
             </div>
-            <div id="email" class="mb-3 mb-lg-4 position-relative">
-              <div class="position-absolute">
+            <div class="mb-3 mb-lg-4 position-relative">
+              <div id="email-error-icon" class="position-absolute">
                 <span class="badge rounded-circle bg-danger">!</span>
               </div>
-              <input id="email-input" type="text" class="form-control px-sm-3 px-lg-4 py-sm-3 mx-auto" placeholder="Email Address"/>
+              <input id="email-input" type="text" class="form-control px-3 py-3 px-lg-4 mx-auto" placeholder="Email Address"/>
               <p id="email-message" class="error-message text-end text-danger mx-lg-4 mt-2">Looks like this is not an email</p>
             </div>
-            <div id="password" class="mb-3 mb-lg-4 position-relative">
-              <div class="position-absolute">
+            <div class="mb-3 mb-lg-4 position-relative">
+              <div id="password-error-icon" class="position-absolute">
                 <span class="badge rounded-circle bg-danger">!</span>
               </div>
-              <input id="password-input" type="password" class="form-control px-sm-3 px-lg-4 py-sm-3 mx-auto" placeholder="Password" />
-              <p id="password-message" class="error-message text-end text-danger mx-lg-4 mt-2">Password cannot be empty</p>
+              <input id="password-input" type="password" class="form-control px-3 py-3 px-lg-4 mx-auto" placeholder="Password" />
+              <p id="password-message" class="error-message text-end text-danger mt-2 mx-lg-4 ">Password cannot be empty</p>
             </div>
 
-            <div class="d-grid mb-sm-2">
+            <div class="d-grid mb-2">
               <button type="submit" class="btn btn-success py-3 mx-auto">
                 <span class="text-light">Claim your free trial</span>
               </button>
